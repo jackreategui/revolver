@@ -48,4 +48,42 @@ button{
     font-size: 14px;
     color: var(--black);
     padding: 15px 40px;
+    border:none;
+}
+
+header{
+    width: 100%;
+    max-width: 1440px;
+    height: 60px;
+    max-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.logo_nav{
+    width: 100px;
+    height: 15px;
+    background-image: url('./assets/icon/logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu_mobile{
+    width: 23px;
+    height: 15px;
+    background-image: url('./assets/icon/menu_mobile.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav_menu{
+    display: none;
+}
+
+.phone_contact{
+    display: none;
 }
