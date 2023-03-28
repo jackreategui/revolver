@@ -1,0 +1,51 @@
+:root{
+    --black: #232323;
+    --white: #fff;
+    --yellow: #EBE838;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--black);
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+h2{
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+a{
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--white);
+}
+
+button{
+    font-size: 14px;
+    color: var(--black);
+    padding: 15px 40px;
+}
