@@ -49,6 +49,14 @@ button{
     color: var(--black);
     padding: 15px 40px;
     border:none;
+    background-color: var(--yellow);
+    color: var(--black);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover{
+    text-decoration: underline;
 }
 
 header{
@@ -102,4 +110,73 @@ header{
 .hero_container{
     width: 100%;
     padding: 0 16px;
+}
+
+.hero_text{
+    width: 100%;
+    padding: 32px 16px;
+}
+
+.hero_text h1{
+    line-height: 60px;
+    letter-spacing: -1px;
+    padding-bottom: 16px;
+}
+
+.hero_text p{
+    line-height: 30px;
+    letter-spacing: 0;
+    padding-bottom: 16px;
+}
+
+.articulos_container{
+    width: 100%;
+    padding: 0 16px;
+}
+
+.articulos_container h2{
+    font-size: 32px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.cards_container{
+    /* display: flex;
+    gap: 32px; */
+    padding: 32px 0;
+}
+
+.card{
+    width: 300px;
+    max-width: 380px;
+    height: 640px;
+}
+
+.img_product{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: var(--white);
+    margin-bottom: 16px;
+}
+
+.text_card{
+    width: 100%;
+    height: 100%;
+}
+
+.text_card h3{
+    padding-bottom: 8px;
+}
+
+.text_card p{
+    width: 100%;
+    height: 100px;
+    padding-bottom: 8px;
+}
+
+#precio{
+    width: 100%;
+    height: 0;
+    padding: 0;
 }
