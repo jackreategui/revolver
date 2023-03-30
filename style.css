@@ -143,40 +143,48 @@ header{
 .cards_container{
     /* display: flex;
     gap: 32px; */
-    padding: 32px 0;
 }
 
 .card{
     width: 300px;
     max-width: 380px;
-    height: 640px;
+    height: 480px;
+    border: 1px solid var(--white);
+    margin: 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .img_product{
+    display: flex;
+    justify-items: center;
     width: 100%;
-    height: 250px;
+    height: 90%;
     object-fit: cover;
     background-color: var(--white);
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
 
 .text_card{
     width: 100%;
     height: 100%;
+    padding: 0 8px;
 }
 
 .text_card h3{
     padding-bottom: 8px;
 }
 
-.text_card p{
+.text_card p:nth-child(1){
     width: 100%;
     height: 100px;
-    padding-bottom: 8px;
+    font-weight: 300;
 }
 
-#precio{
-    width: 100%;
-    height: 0;
-    padding: 0;
+.precio{
+    padding: 16px 0;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 2px;
 }
