@@ -219,14 +219,118 @@ header{
 
 .img_cliente img{
     margin: 16px auto 0;
-    width: 80%;
+    width: 70%;
     height: auto;
     border-radius: 100%;
 }
+
 .img_cliente p{
     text-align: center;
+    font-weight: 300;
+}
+
+.img--nombre_cliente{
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .text_container--usuario img:nth-child(2){
     display: none;
+}
+
+.text_container--usuario h3{
+    display: none;
+}
+
+.p_comentario{
+    padding: 16px 64px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.resaltado_cliente{
+    font-weight: 300;
+    line-height: 24px;
+    padding: 16px 64px;
+    color: var(--yellow);
+}
+
+.flechas_indicadoras{
+    display: flex;
+    justify-content: space-between;
+    margin: 24px auto;
+    width: 200px;
+    height: 60px;
+}
+
+.flechas{
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.flechas:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    width: 100%;
+    max-width: 1440px;
+}
+
+.contact_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 32px 16px;
+}
+
+.contact_container h3{
+    padding-bottom: 16px;
+}
+
+.contact_container p{
+    font-weight: 300;
+}
+
+.contact_buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 16px auto;
+    gap: 16px;
+}
+
+.contact_buttons button{
+    display: flex;
+    background-color: var(--white);
+    color: var(--black);
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+}
+
+.contact_buttons button p{
+    color: var(--black);
+}
+
+.contact_buttons a{
+    background-color: var(--yellow);
+    width: 100%;
+    height: 70px;
+    color: var(--black);
+    border-radius: 8px;
+    padding: 28px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.desarrollador{
+    padding: 16px 0 0 0;
+    font-size: 13px;
 }
