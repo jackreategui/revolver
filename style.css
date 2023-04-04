@@ -86,10 +86,67 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.menu_mobile_close{
+    width: 18px;
+    height: 18px;
+    background-image: url('./assets/icon/close_menu_mobile.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    z-index: 200;
+    cursor: pointer;
+    transition: .3s;
 }
 
 .nav_menu{
     display: none;
+    flex-direction: column;
+    align-items: end;
+    padding: 70px 42px;
+    gap: 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.nav_menu_open{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 70px 42px;
+    gap: 8px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.nav_menu a{
+    font-size: 24px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.nav_menu a:hover{
+    text-decoration: underline;
+    color: var(--yellow);
+    font-weight: 500;
 }
 
 .phone_contact{
@@ -132,6 +189,8 @@ header{
 .articulos_container{
     width: 100%;
     padding: 0 16px;
+    display: none;
+    /* cambiar esto cuando hayan prodcutos */
 }
 
 .articulos_container h2{
@@ -141,12 +200,15 @@ header{
 }
 
 .cards_container{
-    /* display: flex; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 32px;
+    overflow: auto;
 }
 
 .card{
-    width: 300px;
+    min-width: 300px;
     max-width: 380px;
     height: 480px;
     border: 1px solid var(--white);
@@ -200,11 +262,16 @@ header{
 }
 
 .container_clientes{
-    /* display: flex; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 32px;
+    overflow: hidden;
 }
 
 .cliente{
+    min-width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,6 +301,11 @@ header{
     font-size: 24px;
 }
 
+.text_container--usuario{
+    width: 100%;
+    min-height: 800px;
+}
+
 .text_container--usuario img:nth-child(2){
     display: none;
 }
@@ -243,6 +315,7 @@ header{
 }
 
 .p_comentario{
+    min-height: 300px;
     padding: 16px 64px;
     font-weight: 300;
     line-height: 24px;
@@ -264,12 +337,28 @@ header{
 }
 
 .flechas{
+    width: 48px;
+    height: 48px;
     cursor: pointer;
     transition: 0.3s ease-in;
 }
 
 .flechas:hover{
     transform: scale(1.1);
+}
+
+.flecha_izquierda{
+    background-image: url('./assets/icon/Arrow-left.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flecha_derecha{
+    background-image: url('./assets/icon/Arrow-right.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer{
