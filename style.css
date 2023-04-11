@@ -206,16 +206,18 @@ header{
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 32px;
-    overflow: auto;
+    overflow: unset;
 }
 
 .card{
     min-width: 300px;
     max-width: 380px;
     height: 480px;
+    max-height: 800px;
     border: 1px solid var(--white);
     margin: 32px 0;
     display: flex;
+    padding: 0 0 16px 0;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -224,26 +226,55 @@ header{
     display: flex;
     justify-items: center;
     width: 100%;
-    height: 90%;
+    min-height: 100px;
+    height:100%;
     object-fit: cover;
     background-color: var(--white);
     margin-bottom: 24px;
+    transition: 0.3s ease-in-out;
+}
+
+.img_product:hover{
+    transform: scale(1.1);
+}
+
+.polo_img{
+    background-image: url('https://i.linio.com/p/57e936279d05afe28f57bf63cbeb2be6-product.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.polera_img{
+    background-image: url('https://http2.mlstatic.com/D_NQ_NP_626856-MPE52820295040_122022-W.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.poster_img{
+    background-image: url('https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71DsgwAgWKS.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .text_card{
     width: 100%;
     height: 100%;
     padding: 0 8px;
+    height: 450px;
 }
 
 .text_card h3{
     padding-bottom: 8px;
 }
 
-.text_card p:nth-child(1){
+.text_card p:nth-child(2){
     width: 100%;
-    height: 100px;
+    height: 60px;
     font-weight: 300;
+    font-size: 13px;
 }
 
 .precio{
