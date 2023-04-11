@@ -68,6 +68,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 16px;
+    margin: 0 auto;
 }
 
 .logo_nav{
@@ -154,6 +155,7 @@ header{
 }
 
 .main_container{
+    margin: 0 auto;
     width: 100%;
     max-width: 1440px;
     height: 100%;
@@ -263,6 +265,7 @@ header{
 
 .container_clientes{
     display: flex;
+    max-width: 400px;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 32px;
@@ -397,7 +400,8 @@ footer{
     background-color: var(--white);
     color: var(--black);
     width: 100%;
-    height: 70px;
+    max-width: 350px;
+    height: 50px;
     justify-content: center;
     align-items: center;
     gap: 8px;
@@ -411,10 +415,11 @@ footer{
 .contact_buttons a{
     background-color: var(--yellow);
     width: 100%;
-    height: 70px;
+    max-width: 350px;
+    height: 50px;
     color: var(--black);
     border-radius: 8px;
-    padding: 28px 0;
+    padding: 14px 0;
     text-align: center;
     font-size: 16px;
 }
@@ -422,4 +427,195 @@ footer{
 .desarrollador{
     padding: 16px 0 0 0;
     font-size: 13px;
+}
+
+@media (min-width:700px) {
+    .menu_mobile{
+        display: none;
+    }
+
+    .nav_menu{
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        padding: 70px 0px;
+        gap: 8px;
+        position: unset;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--black);
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .nav_menu a{
+        font-size: 13px;
+        color: var(--white);
+        font-weight: 400;
+    }
+
+    .nav_menu a:hover{
+        text-decoration: underline;
+        color: var(--yellow);
+        font-weight: 400;
+    }
+
+    .phone_contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 150px;
+        cursor: pointer;
+    }
+
+    .phone_contact img{
+        width: 22px;
+        height: 22px;
+    }
+
+    .phone_contact p{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .main_container img{
+        width: 100%;
+        height: auto;
+        max-width: 40vw;
+        max-height: 400px;
+        object-fit: cover;
+    }
+    
+    .hero_container{
+        margin: 60px auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .hero_text{
+        max-width: 60%;
+        margin: 0;
+        padding: 0 16px;
+    }
+
+    .hero_text h1{
+        font-size: 48px;
+    }
+
+    .hero_text p{
+        width: 80%;
+    }
+
+    .articulos_container{
+        width: 100%;
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        margin: 60px auto 0;
+    }
+
+    .cards_container{
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    .card{
+        max-width: 300px;
+    }
+
+    .text_card h3{
+        font-size: 22px;
+        padding-bottom: 8px;
+    }
+    
+    .text_card p:nth-child(1){
+        width: 100%;
+        height: 100px;
+        font-weight: 400;
+    }
+    
+    .precio{
+        padding: 16px 0;
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+
+    .container_clientes{
+        min-width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        gap: 32px;
+        overflow: unset;
+        margin: 32px auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .cliente{
+        width: 100%;
+        max-width: 400px;
+        min-width: 300px;
+        height: auto;
+        max-height: 850px;
+    }
+
+    .img_cliente{
+        display: flex;
+        width: 60%;
+        margin: 32px auto;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .flechas{
+        display: none;
+    }
+
+    footer{
+        margin: 60px auto 0;
+    }
+
+    .contact_buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80%;
+        margin: 40px auto 20px;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cards_container{
+        width: 100%;
+        overflow: auto;
+    }
+
+    .container_clientes{
+        min-width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        gap: 32px;
+        overflow: auto;
+        margin: 32px auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
 }
