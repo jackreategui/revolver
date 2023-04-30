@@ -11,3 +11,5 @@ Esta landing page esta creada desde cero, primero pasando por el diseño creado 
 Despues de pasar por la etapa del diseño empece a maquetarlo con HTTML, CSS y Javascript vanilla, todo esta hecho con ningun framework y la duracion de todo el protecto duro mas de 48 horas aproximadamente separados por varios dias. No fueron 48 horas seguidas.
 
 Pueden revisar todo el proyecto y aportar con comentarios o con mejorar en el codigo.
+
+Link del proyecto en vivo: [Revolver](https://revolverband.netlify.app/ "Revolver")
